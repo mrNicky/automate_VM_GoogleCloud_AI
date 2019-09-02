@@ -4,7 +4,7 @@ read -p 'entrer le nombre de votre instance : ' instance
 read -p 'pour vous connecter sans recreer de vm, taper Y sinon N ; ' Y
 
 
-if [ $Y = "y" ]
+if [ $Y = "Y" ]
 then 
 	gcloud config set project $projet
 	gcloud compute ssh --project $projet --zone europe-west1-b $instance
