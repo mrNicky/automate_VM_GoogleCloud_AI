@@ -1,5 +1,8 @@
 #!/bin/bash
 
+mkdir $HOME/.conda
+
+
 #Set up VM with Anaconda
 apt-get -y update
 echo "install conda"
