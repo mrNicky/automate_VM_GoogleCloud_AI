@@ -12,7 +12,10 @@ apt-get -y install bzip2 libxml2-dev
 wget https://repo.continuum.io/archive/Anaconda3-2019.07-Linux-x86_64.sh -O ~/anaconda.sh
 bash ~/anaconda.sh -b -p $HOME/anaconda
 
-source ~/.bashrc
+
+export PATH=~/anaconda/bin:$PATH
+conda init bash
+source ~/.bashrc 
 conda activate 
 #exit 2
 #gcloud compute instances stop $instance 
