@@ -13,6 +13,7 @@ wget https://repo.continuum.io/archive/Anaconda3-2019.07-Linux-x86_64.sh -O ~/an
 bash ~/anaconda.sh -b -p $HOME/anaconda
 
 source ~/.bashrc
+conda activate 
 #exit 2
 #gcloud compute instances stop $instance 
 
