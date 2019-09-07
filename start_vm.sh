@@ -1,7 +1,7 @@
 #!/bin/bash
 
 projet="prosilabfruit"
-instance="instsilabfruitins1"
+instance="didi1"
 
 start_vm () {
         gcloud compute instances start $instance

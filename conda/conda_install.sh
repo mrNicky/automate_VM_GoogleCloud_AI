@@ -7,8 +7,8 @@ echo "install conda"
 #TO DO: force all command yes
 apt-get -y install bzip2 libxml2-dev
 wget https://repo.anaconda.com/archive/Anaconda2-2019.07-Linux-x86_64.sh
-bash Anaconda2-2019.07-Linux-x86_64.sh -b && rm $_
-source .bahsrc
+bash Anaconda2-2019.07-Linux-x86_64.sh && rm $_
+source ~/.bashrc
 exit 2
 #gcloud compute instances stop $instance 
 
