@@ -1,8 +1,7 @@
 #!/bin/bash
 
 projet="prosilabfruit"
-instance="toto123toto"
-
+instance="gogo123gogo"
 
 install_conda () {
 	gcloud compute instances start $instance
@@ -13,11 +12,11 @@ install_conda () {
 }
 
 start_vm () {
+ 	gcloud compute instances start $instance
         gcloud compute ssh --project $1 --zone europe-west1-b $2
 }
-
-"#@"
-
+#install_conda $project $instance
+#start_vm $projet $instance
 
 
 
