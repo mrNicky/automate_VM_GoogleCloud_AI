@@ -15,7 +15,7 @@
 
 #export PATH=~/anaconda/bin:$PATH
 #conda init bash
-source ~/.bashrc 
+source .bashrc 
 #conda activate 
 #exit 2
 #gcloud compute instances stop $instance 
