@@ -40,13 +40,12 @@ then
 
 else
 	gcloud projects create $projet && gcloud config set project $_
-	#Installn billing google cloud
+	"INSTALLATION GOOGLE CLOUD AND BILLING  -------------->"
 	sudo apt -y install snapd
 	sudo snap install google-cloud-sdk --classic
 	gcloud alpha billing projects link $projet --billing-account `gcloud alpha billing accounts list | grep -o '^[A-Z0-9-]*' | tail -n1`
 	
-	#Create instance from ubuntu:1804:lts
-	#for (( i=1; i <= $N; i=++i ));do 
+	echo "CREATE INSTANCE -------------->"
 	gcloud compute instances create $instance \
 	--image-family ubuntu-1804-lts --image-project gce-uefi-images --zone europe-west1-b \
 	--machine-type n1-standard-2 --accelerator type=nvidia-tesla-k80,count=1 \ 
