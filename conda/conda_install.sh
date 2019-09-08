@@ -15,6 +15,6 @@ bash ~/anaconda.sh -b -p $HOME/anaconda
 
 export PATH=~/anaconda/bin:$PATH
 conda init bash
-#exit 2
-#gcloud compute instances stop $instance 
+exit 2
+gcloud compute instances stop $instance 
 
